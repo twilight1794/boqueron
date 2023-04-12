@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Boquerón</title>
+        <link rel="stylesheet" href="estilos.css" type="text/css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+    <!--
+    Poner botones dinámicamente:
+    <a class="but" rel="home" href="#inicio">Inicio</a>
+    <button class="but" id="toggleSonido">Sonido</button>
+    <a class="flecha" rel="next">Siguiente</a>
+    <a class="flecha" rel="prev">Anterior</a>
+    https://www.youtube.com/watch?v=H05xayM5i50
+    --><!--
+        <article class="pagina" aria-label="Inicio" id="inicio">
+            <h1>Alimentos Saludables y no saludables</h1>
+            <a rel="next" href="#d2">Comenzar</a>
+        </article>-->
+        <h2>¿Saludable o no saludable?</h2>
+        <div id="mesa"></div>
+        <button data-value="s"><span>Saludable</span><img src="up.webp" /></button>
+        <button data-value="n"><span>No saludable</span><img src="down.webp" /></button>
+        <div id="mensaje">Manzana</div>
+        <dialog><h2>Resultados</h2><div><output id="res"></output> de 10</div><button onclick="window.location.reload()">Volver a jugar</button></dialog>
+    </body>
+</html>
