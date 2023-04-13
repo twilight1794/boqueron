@@ -1,2 +1,11 @@
-# The Docker image that will be used to build your app
-image: node:lts
+image: busybox
+
+pages:
+  stage: deploy
+  script:
+  - echo 'Nothing to do...'
+  artifacts:
+    paths:
+    - public
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
